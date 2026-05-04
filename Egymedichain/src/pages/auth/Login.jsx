@@ -7,7 +7,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import { api } from "../../services/http";
-import "./ForgotPassword.css";
 import "./login.css";
 
 export default function Login() {
@@ -95,7 +94,7 @@ export default function Login() {
             <span>Remember me</span>
           </label>
 
-          <a onClick={() => navigate("/forgot-password")} className="forgot" style={{cursor:"pointer"}}>
+          <a onClick={() => navigate("/forget-password")} className="forgot" style={{cursor:"pointer"}}>
          
             <span>Forgot password?</span>
           </a>
