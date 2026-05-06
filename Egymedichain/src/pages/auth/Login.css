@@ -1,4 +1,6 @@
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -8,6 +10,7 @@ html, body, #root {
 body {
   background: white;
 }
+
 .input-box input::-ms-reveal,
 .input-box input::-ms-clear {
   display: none;
@@ -32,7 +35,8 @@ input:-webkit-autofill {
   flex: 1;
   height: 100vh;
   position: relative;
-  margin-left: -60px;  /* ده بيخلي الصورة تطلع على الـ form شوية */
+  margin-left: -60px;
+  /* ده بيخلي الصورة تطلع على الـ form شوية */
   z-index: 1;
 }
 
@@ -69,6 +73,7 @@ input:-webkit-autofill {
   box-sizing: border-box;
   z-index: 0;
 }
+
 /* العنوان */
 .login-form_right h2 {
   font-family: 'SF Pro', sans-serif;
@@ -110,7 +115,8 @@ input:-webkit-autofill {
   border-radius: 50px;
   margin-bottom: 15px;
   transition: 0.3s;
-  position: relative; /* ← زيد السطر ده */
+  position: relative;
+  /* ← زيد السطر ده */
   overflow: hidden;
 }
 
@@ -130,13 +136,14 @@ input:-webkit-autofill {
   cursor: pointer;
   color: #888;
 }
+
 .input-box input {
   border: none;
   outline: none;
   background: transparent;
   width: 100%;
   color: black;
-  flex: 1; 
+  flex: 1;
 }
 
 /* password */
@@ -233,8 +240,9 @@ button:disabled {
   margin-top: 10px;
   text-align: center;
 }
+
 .remember input[type="checkbox"]:checked {
-  accent-color:#224A8A;
+  accent-color: #224A8A;
 }
 
 /* ===== Responsive ===== */
@@ -242,12 +250,15 @@ button:disabled {
   .login-form_right {
     padding: 40px;
   }
+
   .login-form_right h2 {
     font-size: 48px;
   }
+
   .login-form_right h2 span {
     font-size: 48px;
   }
+
   .desc {
     font-size: 20px;
   }
@@ -262,7 +273,8 @@ button:disabled {
   }
 
   .login-form_left {
-    display: none; /* ← اخبي الصورة على موبايل */
+    display: none;
+    /* ← اخبي الصورة على موبايل */
   }
 
   .login-form_right {
@@ -323,10 +335,39 @@ button:disabled {
   .login-form_right h2 {
     font-size: 26px;
   }
+
   .login-form_right h2 span {
     font-size: 26px;
   }
+
   .desc {
     font-size: 12px;
+  }
+
+  /* Google Login */
+  .divider {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    gap: 10px;
+  }
+
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+  }
+
+  .divider span {
+    color: #888;
+    font-size: 14px;
+  }
+
+  .google-btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }

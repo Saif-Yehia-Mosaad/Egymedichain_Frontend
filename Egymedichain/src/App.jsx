@@ -13,14 +13,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} /> {/* 👈 الحل */}
 
+        <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
 
         <Route path="/forget-password" element={<ForgetPassword />} />
         <Route path="/verify-email" element={<VerifyEmail />} />
         <Route path="/reset-password" element={<ResetPassword />} />
-        <Route path="/youre-back-in" element={<YoureBackIn />} /> 
+        <Route path="/youre-back-in" element={<YoureBackIn />} />
       </Routes>
     </BrowserRouter>
   );
